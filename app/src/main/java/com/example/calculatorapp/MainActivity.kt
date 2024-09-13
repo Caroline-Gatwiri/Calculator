@@ -35,6 +35,12 @@ class MainActivity : ComponentActivity() {
                 }) {
                     Text(text = "Add")
                 }
+                Button(onClick = {
+                    var result =  num1.toInt() - num2.toInt()
+                    Toast.makeText(applicationContext, "Result is $result", Toast.LENGTH_SHORT).show()
+                }) {
+                    Text(text = "Subtract")
+                }
             }
 
         }
