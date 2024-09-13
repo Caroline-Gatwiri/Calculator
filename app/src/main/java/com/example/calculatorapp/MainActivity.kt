@@ -38,14 +38,28 @@ class MainActivity : ComponentActivity() {
                         var result =  num1.toInt() + num2.toInt()
                         Toast.makeText(applicationContext, "Result is $result", Toast.LENGTH_SHORT).show()
                     }) {
-                        Text(text = "Add")
+                        Text(text = "ADD")
                     }
                     Spacer(modifier = Modifier.width(16.dp))
                     Button(onClick = {
                         var result =  num1.toInt() - num2.toInt()
                         Toast.makeText(applicationContext, "Result is $result", Toast.LENGTH_SHORT).show()
                     }) {
-                        Text(text = "Subtract")
+                        Text(text = "SUB")
+                    }
+                    Spacer(modifier = Modifier.width(16.dp))
+                    Button(onClick = {
+                        var result =  num1.toInt() * num2.toInt()
+                        Toast.makeText(applicationContext, "Result is $result", Toast.LENGTH_SHORT).show()
+                    }) {
+                        Text(text = "MUL")
+                    }
+                    Spacer(modifier = Modifier.width(16.dp))
+                    Button(onClick = {
+                        var result =  num1.toInt() / num2.toInt()
+                        Toast.makeText(applicationContext, "Result is $result", Toast.LENGTH_SHORT).show()
+                    }) {
+                        Text(text = "DIV")
                     }
                 }
 
